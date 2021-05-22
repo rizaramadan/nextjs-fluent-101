@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { getTheme } from '@fluentui/react'
+import { PrimaryButton } from '@fluentui/react/lib/Button'
+
+const theme = getTheme();
 
 export default function Home() {
   return (
@@ -13,7 +17,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Procify
         </h1>
 
         <p className={styles.description}>
@@ -21,13 +25,18 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
+        <p>
+          <PrimaryButton text="Primary"/>
+        </p>
+        
+        
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs" className={styles.card} style={{ boxShadow: theme.effects.elevation8 }}  >
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="https://nextjs.org/learn" className={styles.card} >
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
