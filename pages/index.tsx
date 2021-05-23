@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { getTheme } from '@fluentui/react'
-import { PrimaryButton } from '@fluentui/react/lib/Button'
+import { PrimaryButton } from '@fluentui/react/lib-commonjs/Button'
 
 const theme = getTheme();
 
@@ -27,7 +27,7 @@ export default function Home() {
         </p>
 
         <p>
-          <PrimaryButton text="Primary"/>
+          <PrimaryButton text="Primary" />
         </p>
         
         
